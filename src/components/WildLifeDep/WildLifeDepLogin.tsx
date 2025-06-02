@@ -4,25 +4,24 @@ import React, { useState } from 'react';
 import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { RootStackParamList } from '../../types/navigation';
 
-const StationMasterLogin = () => {
+const WildLifeDepLogin = () => {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
     if (username.trim() === '' || password.trim() === '') {
-      Alert.alert('Login Error', 'Please enter both username and password');
+      Alert.alert('Login Failed', 'Please enter both username and password.');
       return;
     }
 
-    // TODO: Add real authentication logic here
-    console.log('Station Master Login:', username, password);
-    navigation.navigate('StationMaster');
+    console.log('WildLife Department Login:', username);
+    navigation.navigate('WildLifeDep');
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Station Master Login</Text>
+      <Text style={styles.title}>Wild Life Department Login</Text>
 
       <TextInput
         style={styles.input}
@@ -47,12 +46,12 @@ const StationMasterLogin = () => {
   );
 };
 
-export default StationMasterLogin;
+export default WildLifeDepLogin;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#eef6f9',
+    backgroundColor: '#e0f7f1',
     justifyContent: 'center',
     alignItems: 'center',
     padding: 24,
@@ -73,7 +72,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   button: {
-    backgroundColor: '#006d77',
+    backgroundColor: '#0a9396',
     paddingVertical: 14,
     paddingHorizontal: 30,
     borderRadius: 10,
