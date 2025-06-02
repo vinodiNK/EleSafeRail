@@ -39,9 +39,13 @@ const HomePage = () => {
 </TouchableOpacity>
 
 
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>General People</Text>
-      </TouchableOpacity>
+      <TouchableOpacity
+  style={styles.button}
+  onPress={() => navigation.navigate('GeneralPeople')}
+>
+  <Text style={styles.buttonText}>General People</Text>
+</TouchableOpacity>
+
     </View>
   );
 };

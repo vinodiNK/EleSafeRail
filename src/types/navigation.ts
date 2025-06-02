@@ -4,5 +4,6 @@ export type RootStackParamList = {
   Home: undefined;          // no params expected
   TrainDriver: undefined;
   StationMaster: undefined;
-  WildLifeDep: undefined;   // no params expected
+  WildLifeDep: undefined; 
+   GeneralPeople: undefined;  // no params expected
 };
