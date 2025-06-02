@@ -4,6 +4,7 @@ import React from 'react';
 import HomePage from './src/components/HomePage';
 import StationMaster from './src/components/StationMaster';
 import TrainDriver from './src/components/TrainDriver';
+import WildLifeDep from './src/components/WildLifeDep';
 import { RootStackParamList } from './src/types/navigation';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -15,6 +16,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="TrainDriver" component={TrainDriver} />
         <Stack.Screen name="StationMaster" component={StationMaster} />
+        <Stack.Screen name="WildLifeDep" component={WildLifeDep} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -31,9 +31,13 @@ const HomePage = () => {
 </TouchableOpacity>
 
 
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Wild Life Department</Text>
-      </TouchableOpacity>
+      <TouchableOpacity
+  style={styles.button}
+  onPress={() => navigation.navigate('WildLifeDep')}
+>
+  <Text style={styles.buttonText}>Wild Life Department</Text>
+</TouchableOpacity>
+
 
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>General People</Text>
