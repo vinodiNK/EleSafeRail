@@ -4,12 +4,12 @@ import React, { useState } from 'react';
 import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { RootStackParamList } from '../../types/navigation';
 
-const TrainDriverSignUp = () => {
+const TrainDriverLogin = () => {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignUp = () => {
+  const handleLogin = () => {
     if (username.trim() === '' || password.trim() === '') {
       Alert.alert('Error', 'Please enter both username and password');
       return;
@@ -22,7 +22,7 @@ const TrainDriverSignUp = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Train Driver Sign Up</Text>
+      <Text style={styles.title}>Train Driver Login Page</Text>
 
       <TextInput
         style={styles.input}
@@ -40,14 +40,14 @@ const TrainDriverSignUp = () => {
         secureTextEntry
       />
 
-      <TouchableOpacity style={styles.button} onPress={handleSignUp}>
-        <Text style={styles.buttonText}>Sign Up & Continue</Text>
+      <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-export default TrainDriverSignUp;
+export default TrainDriverLogin;
 
 const styles = StyleSheet.create({
   container: {

@@ -18,7 +18,7 @@ const HomePage = () => {
 
       <TouchableOpacity
   style={styles.button}
-  onPress={() => navigation.navigate('TrainDriverSignUp')} // ✅ points to the sign-up screen
+  onPress={() => navigation.navigate('TrainDriverLogin')} // ✅ points to the sign-up screen
 >
   <Text style={styles.buttonText}>Train Driver</Text>
 </TouchableOpacity>
