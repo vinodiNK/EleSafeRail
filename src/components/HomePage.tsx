@@ -17,11 +17,13 @@ const HomePage = () => {
       <Text style={styles.title}>Train Ele App</Text>
 
       <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('TrainDriver')}
-      >
-        <Text style={styles.buttonText}>Train Driver</Text>
-      </TouchableOpacity>
+  style={styles.button}
+  onPress={() => navigation.navigate('TrainDriverSignUp')} // ✅ points to the sign-up screen
+>
+  <Text style={styles.buttonText}>Train Driver</Text>
+</TouchableOpacity>
+
+
 
       <TouchableOpacity
   style={styles.button}

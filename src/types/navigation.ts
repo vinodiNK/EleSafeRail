@@ -1,7 +1,8 @@
 // src/types/navigation.ts
 
 export type RootStackParamList = {
-  Home: undefined;          // no params expected
+  Home: undefined;  
+  TrainDriverSignUp: undefined;        // no params expected
   TrainDriver: undefined;
   StationMaster: undefined;
   WildLifeDep: undefined; 
